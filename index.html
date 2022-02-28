@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+ 
+  <link rel="stylesheet" href="style.css">
+  
+<title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+
+<main>
+<div class="container">
+  <div class="head"> IP Address Tracker</div>
+  <div class="entry">
+ <input type="text" placeholder="Search for any IP address or domain" class="btn"><span><img src="images/icon-arrow.svg" class="arrow"></span>
+</div>
+ <!-- <input type="text" placeholder="Search for any IP address or domain" class="btn"><img src="images/icon-arrow.svg" class="arrow"> </input> -->
+<div class="box">
+  <div class=" add">
+    <p>IP Address</p>
+    <div class="detail ip">192.212.174.101</div>
+  </div>
+  <div class=" add">
+    <p>Location</p>
+    <div class="detail location">Brooklyn,NY 10001</div>
+  </div>
+  <div class=" add">
+    <p>Timezone</p>
+    <div class="detail time">UTC-05:00</div>
+  </div>
+  <div class=" add">
+    <p>ISP</p>
+    <div class="detail isp">SpaceX Starlink</div>
+  </div>
+</div>
+</div>
+ <div id="map"></div>
+
+ 
+
+  <!-- IP Address -->
+  <!-- Location -->
+  <!-- Timezone -->
+    <!-- UTC add offset value dynamically using the API -->
+  <!-- ISP -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+</main>
+</body>
+</html>
+

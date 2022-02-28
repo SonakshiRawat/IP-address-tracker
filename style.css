@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    /* overflow: hidden; */
+}
+#map{
+    height: 400px;
+    z-index: 0;
+}
+
+.container{
+    background: url('images/pattern-bg.png');
+    background-repeat: no-repeat;
+    height: 230px;
+    text-align: center;
+    position: relative;
+}
+
+.head{
+    color:white;
+    padding: 30px 0px 20px 0px;
+    font-size: 23px;
+}
+.entry{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width:40%;
+    height: 27px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    background-color: white;
+    color: hsl(0, 0%, 59%);
+    text-align: left;
+    padding: 10px;
+    font-size: 13px;
+}
+.arrow{
+    background-color:hsl(0, 0%, 17%);
+    width:12px;
+    padding: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box{
+    background-color: white;
+    width:62%;
+    height: 130px;
+    border-radius: 10px;
+    position: absolute;
+    left:20%;
+    top:170px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+    color:hsl(0, 0%, 59%);
+}
+
+.detail{
+    color: hsl(0, 0%, 17%);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width:1075px) {
+    .box{
+        width:80%;
+        height: 130px;
+        left:10%;
+        /* top:170px; */
+    }
+    
+}
+
+@media (max-width:630px) {
+    body{
+        overflow:scroll;
+    }
+    .container{
+ 
+        height: 350px;
+   background-size: cover;
+    }
+    .box{
+        width:72%;
+        height: 330px;
+        left:15%;
+        flex-direction: column;
+        justify-content: center;
+         top:190px;
+
+    }
+       
+    .add{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    input{
+        width:60%;
+        font-size: 11px;
+    }
+}
